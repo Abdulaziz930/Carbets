@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -378,6 +379,67 @@ header nav .nav-item .btn:hover {
   color: #fff;
 }
 
+#projects .section-heading {
+  margin-top: 90px;
+  text-align: center;
+}
+
+#projects .section-heading h1 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 700;
+  color: #000000;
+}
+
+#projects .section-heading h1::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  left: 45%;
+  border-radius: 5px;
+  bottom: -30px;
+  background-color: #000000;
+}
+
+#projects .project-slider {
+  margin-top: 100px;
+}
+
+#projects .project-slider .slider-item img {
+  width: 100%;
+  padding-right: 20px;
+  height: 375px;
+}
+
+#projects .project-slider .slick-prev::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: 25px;
+  font-weight: 600;
+  color: #1c74ef;
+  position: absolute;
+  bottom: -230px;
+  left: 490px;
+}
+
+#projects .project-slider .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: 25px;
+  font-weight: 600;
+  color: #1c74ef;
+  position: absolute;
+  bottom: -230px;
+  right: 490px;
+}
+
+#projects .project-slider .slick-dots li button::before {
+  top: 25px;
+  color: #1c74ef;
+  font-size: 10px;
+}
+
 @media screen and (max-width: 1024px) {
   #intro .intro-wrapper .intro-content-box {
     text-align: center;
@@ -393,6 +455,9 @@ header nav .nav-item .btn:hover {
   }
   #family .family-wrapper .contentBox p br {
     display: none;
+  }
+  #projects .project-slider img {
+    padding-left: 10px;
   }
 }
 
@@ -426,6 +491,9 @@ header nav .nav-item .btn:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  #projects .project-slider .slider-item img {
+    padding-right: 10px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -449,5 +517,8 @@ header nav .nav-item .btn:hover {
   }
   #services .services-container .service-item {
     margin-top: 20px;
+  }
+  #projects .section-heading h1::after {
+    left: 47%;
   }
 }

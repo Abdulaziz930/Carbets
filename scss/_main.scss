@@ -143,3 +143,57 @@
     }
   }
 }
+
+#projects {
+  .section-heading {
+    margin-top: 90px;
+    text-align: center;
+    h1 {
+      position: relative;
+      @include text(35px, 700, $heading-color);
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 3px;
+        left: 45%;
+        border-radius: 5px;
+        bottom: -30px;
+        background-color: $heading-color;
+      }
+    }
+  }
+  .project-slider {
+    margin-top: 100px;
+    .slider-item {
+      img {
+        width: 100%;
+        padding-right: 20px;
+        height: 375px;
+      }
+    }
+    .slick-prev {
+      &::before {
+        @include sliderBtn("\f060");
+        left: 490px;
+      }
+    }
+    .slick-next {
+      &::before {
+        @include sliderBtn("\f061");
+        right: 490px;
+      }
+    }
+    .slick-dots {
+      li {
+        button {
+          &::before {
+            top: 25px;
+            color: $primary-color;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

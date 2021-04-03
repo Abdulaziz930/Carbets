@@ -68,3 +68,11 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin sliderBtn($icon) {
+  font-family: "Font Awesome 5 Free";
+  content: $icon;
+  @include text(25px, 600, $primary-color);
+  position: absolute;
+  bottom: -230px;
+}
