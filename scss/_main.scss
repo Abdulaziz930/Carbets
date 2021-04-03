@@ -1,0 +1,34 @@
+#intro {
+  .intro-wrapper {
+    background-color: $intro-bg-color;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 130px 80px;
+    .intro-content-box {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h5 {
+        @include text(20px, 600, $text-danger-color);
+      }
+      h1 {
+        @include text(50px, 700, $second-heading-color);
+        margin-top: 20px;
+      }
+      p {
+        @include text(20px, 400, $second-text-color);
+        margin-top: 40px;
+      }
+      .btnBox {
+        .btn {
+          @include btn(10px 50px, $primary-color, 18px, $primary-color);
+          margin-top: 45px;
+          &:hover {
+            @include btnHover($primary-color);
+          }
+        }
+      }
+    }
+  }
+}

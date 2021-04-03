@@ -2,8 +2,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container-fluid {
+  padding: 0 55px;
+}
+
 header {
   margin-top: 30px;
+}
+
+header .navbar {
+  padding: 0;
 }
 
 header nav .navbar-toggler {
@@ -99,7 +107,82 @@ header nav .nav-item .btn:hover {
   color: #f04037;
 }
 
+#intro .intro-wrapper {
+  background-color: #f5f8fa;
+  margin-top: 50px;
+  border-radius: 20px;
+  padding: 130px 80px;
+}
+
+#intro .intro-wrapper .intro-content-box {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#intro .intro-wrapper .intro-content-box h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f6624e;
+}
+
+#intro .intro-wrapper .intro-content-box h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #19191b;
+  margin-top: 20px;
+}
+
+#intro .intro-wrapper .intro-content-box p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #4b4b4b;
+  margin-top: 40px;
+}
+
+#intro .intro-wrapper .intro-content-box .btnBox .btn {
+  padding: 10px 50px;
+  background-color: #1c74ef;
+  font-size: 18px;
+  border: 1px solid #1c74ef;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top: 45px;
+}
+
+#intro .intro-wrapper .intro-content-box .btnBox .btn:hover {
+  background-color: transparent;
+  color: #1c74ef;
+}
+
+@media screen and (max-width: 1024px) {
+  #intro .intro-wrapper .intro-content-box {
+    text-align: center;
+  }
+  #intro .intro-wrapper .imgBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  header .navbar {
+    padding: 0 55px;
+  }
   header nav .navbar-toggler .hamburger-menu-icon {
     width: 5%;
   }
@@ -112,5 +195,17 @@ header nav .nav-item .btn:hover {
 @media screen and (max-width: 576px) {
   header nav .navbar-toggler .hamburger-menu-icon {
     width: 8%;
+  }
+  #intro .intro-wrapper {
+    padding: 20px;
+  }
+  #intro .intro-wrapper .intro-content-box h1 {
+    font-size: 40px;
+  }
+  #intro .intro-wrapper .intro-content-box p {
+    font-size: 15px;
+  }
+  #intro .imgBox img {
+    display: none;
   }
 }

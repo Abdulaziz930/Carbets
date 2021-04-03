@@ -1,5 +1,22 @@
+@media screen and(max-width: 1024px) {
+  #intro {
+    .intro-wrapper {
+      .intro-content-box {
+        text-align: center;
+      }
+      .imgBox {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    }
+  }
+}
 @media screen and(max-width: 768px) {
   header {
+    .navbar {
+      padding: 0 55px;
+    }
     nav {
       .navbar-toggler {
         .hamburger-menu-icon {
@@ -21,6 +38,24 @@
         .hamburger-menu-icon {
           width: 8%;
         }
+      }
+    }
+  }
+  #intro {
+    .intro-wrapper {
+      padding: 20px;
+      .intro-content-box {
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .imgBox {
+      img {
+        display: none;
       }
     }
   }
