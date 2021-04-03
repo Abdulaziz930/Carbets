@@ -1,4 +1,5 @@
 let hamburgerMenu = document.querySelector(".navbar-toggler");
+let backToTop = document.querySelector(".backToTop");
 
 let menuOpen = false;
 

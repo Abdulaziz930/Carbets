@@ -1,5 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $main-font-family;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 6px;
+  &:hover {
+    background: $active-color;
+  }
 }
 
 .container-fluid {

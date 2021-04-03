@@ -1,6 +1,23 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c74ef;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1f1534;
 }
 
 .container-fluid {
@@ -419,7 +436,7 @@ header nav .nav-item .btn:hover {
   font-weight: 600;
   color: #1c74ef;
   position: absolute;
-  bottom: -230px;
+  bottom: -215px;
   left: 490px;
 }
 
@@ -430,12 +447,12 @@ header nav .nav-item .btn:hover {
   font-weight: 600;
   color: #1c74ef;
   position: absolute;
-  bottom: -230px;
+  bottom: -215px;
   right: 490px;
 }
 
 #projects .project-slider .slick-dots li button::before {
-  top: 25px;
+  top: 12px;
   color: #1c74ef;
   font-size: 10px;
 }
@@ -526,7 +543,7 @@ header nav .nav-item .btn:hover {
   font-weight: 600;
   color: #1c74ef;
   position: absolute;
-  bottom: -230px;
+  bottom: -215px;
   left: 490px;
   bottom: -333px;
 }
@@ -538,7 +555,7 @@ header nav .nav-item .btn:hover {
   font-weight: 600;
   color: #1c74ef;
   position: absolute;
-  bottom: -230px;
+  bottom: -215px;
   right: 490px;
   bottom: -333px;
 }
