@@ -164,6 +164,83 @@ header nav .nav-item .btn:hover {
   color: #1c74ef;
 }
 
+#partners .partner-container {
+  margin-top: 50px;
+}
+
+#partners .partner-container .partner-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#partners .partner-container .partner-item .slack {
+  position: relative;
+}
+
+#partners .partner-container .partner-item .slack::before {
+  content: url("../assets/icons/hovered-slack.svg");
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#partners .partner-container .partner-item .slack:hover::before {
+  opacity: 1;
+}
+
+#partners .partner-container .partner-item .envanto {
+  position: relative;
+}
+
+#partners .partner-container .partner-item .envanto::before {
+  content: url("../assets/icons/hovered-envanto.svg");
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#partners .partner-container .partner-item .envanto:hover::before {
+  opacity: 1;
+}
+
+#partners .partner-container .partner-item .micrasoft {
+  position: relative;
+}
+
+#partners .partner-container .partner-item .micrasoft::before {
+  content: url("../assets/icons/hover-micrasoft.svg");
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#partners .partner-container .partner-item .micrasoft:hover::before {
+  opacity: 1;
+}
+
+#partners .partner-container .partner-item .uber {
+  position: relative;
+}
+
+#partners .partner-container .partner-item .uber::before {
+  content: url("../assets/icons/hover-uber.svg");
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#partners .partner-container .partner-item .uber:hover::before {
+  opacity: 1;
+}
+
 @media screen and (max-width: 1024px) {
   #intro .intro-wrapper .intro-content-box {
     text-align: center;
@@ -207,5 +284,8 @@ header nav .nav-item .btn:hover {
   }
   #intro .imgBox img {
     display: none;
+  }
+  #partners .partner-container .partner-item {
+    margin-bottom: 30px;
   }
 }

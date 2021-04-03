@@ -32,3 +32,25 @@
     }
   }
 }
+
+#partners {
+  .partner-container {
+    margin-top: 50px;
+    .partner-item {
+      display: flex;
+      justify-content: center;
+      .slack {
+        @include logoHover("../assets/icons/hovered-slack.svg");
+      }
+      .envanto {
+        @include logoHover("../assets/icons/hovered-envanto.svg");
+      }
+      .micrasoft {
+        @include logoHover("../assets/icons/hover-micrasoft.svg");
+      }
+      .uber {
+        @include logoHover("../assets/icons/hover-uber.svg");
+      }
+    }
+  }
+}
