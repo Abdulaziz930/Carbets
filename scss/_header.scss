@@ -1,0 +1,51 @@
+header {
+  margin-top: 30px;
+  nav {
+    .navbar-toggler {
+      margin-right: 20px;
+      transition: all 0.5s ease-in-out;
+      .hamburger-menu-icon {
+        position: absolute;
+        width: 3%;
+        height: 5px;
+        background-color: $primary-color;
+        border-radius: 3px;
+        transition: all 0.5s ease-in-out;
+        &::before {
+          @include hambugerMenu(-10px);
+        }
+        &::after {
+          @include hambugerMenu(10px);
+        }
+      }
+    }
+    .open {
+      .hamburger-menu-icon {
+        transform: translateX(-20px);
+        background-color: transparent;
+        &::before {
+          transform: rotate(45deg) translate(15px, -15px);
+        }
+        &::after {
+          transform: rotate(-45deg) translate(15px, 15px);
+        }
+      }
+    }
+    .nav-item {
+      padding-left: 20px;
+      .nav-link {
+        @include text(16px, 400, $text-color);
+        transition: all 0.5s;
+        &:hover {
+          color: $second-text-color;
+        }
+      }
+      .btn {
+        @include btn(7px 20px, $danger-color, 16px, $danger-color);
+        &:hover {
+          @include btnHover($danger-color);
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,116 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+header {
+  margin-top: 30px;
+}
+
+header nav .navbar-toggler {
+  margin-right: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav .navbar-toggler .hamburger-menu-icon {
+  position: absolute;
+  width: 3%;
+  height: 5px;
+  background-color: #1c74ef;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav .navbar-toggler .hamburger-menu-icon::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  background-color: #1c74ef;
+  border-radius: 3px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav .navbar-toggler .hamburger-menu-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  background-color: #1c74ef;
+  border-radius: 3px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav .open .hamburger-menu-icon {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  background-color: transparent;
+}
+
+header nav .open .hamburger-menu-icon::before {
+  -webkit-transform: rotate(45deg) translate(15px, -15px);
+          transform: rotate(45deg) translate(15px, -15px);
+}
+
+header nav .open .hamburger-menu-icon::after {
+  -webkit-transform: rotate(-45deg) translate(15px, 15px);
+          transform: rotate(-45deg) translate(15px, 15px);
+}
+
+header nav .nav-item {
+  padding-left: 20px;
+}
+
+header nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7d7987;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header nav .nav-item .nav-link:hover {
+  color: #4b4b4b;
+}
+
+header nav .nav-item .btn {
+  padding: 7px 20px;
+  background-color: #f04037;
+  font-size: 16px;
+  border: 1px solid #f04037;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header nav .nav-item .btn:hover {
+  background-color: transparent;
+  color: #f04037;
+}
+
+@media screen and (max-width: 768px) {
+  header nav .navbar-toggler .hamburger-menu-icon {
+    width: 5%;
+  }
+  header nav .navbar-collapse {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header nav .navbar-toggler .hamburger-menu-icon {
+    width: 8%;
+  }
+}

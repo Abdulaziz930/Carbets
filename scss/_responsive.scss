@@ -1,0 +1,27 @@
+@media screen and(max-width: 768px) {
+  header {
+    nav {
+      .navbar-toggler {
+        .hamburger-menu-icon {
+          width: 5%;
+        }
+      }
+      .navbar-collapse {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  header {
+    nav {
+      .navbar-toggler {
+        .hamburger-menu-icon {
+          width: 8%;
+        }
+      }
+    }
+  }
+}
