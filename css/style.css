@@ -338,6 +338,46 @@ header nav .nav-item .btn:hover {
   margin-top: 30px;
 }
 
+#family .family-wrapper {
+  margin-top: 120px;
+}
+
+#family .family-wrapper .contentBox {
+  padding-left: 40px;
+}
+
+#family .family-wrapper .contentBox h1 {
+  font-size: 35px;
+  font-weight: 500;
+  color: #000000;
+}
+
+#family .family-wrapper .contentBox p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4b4b4b;
+  margin-top: 30px;
+}
+
+#family .family-wrapper .contentBox .btnBox {
+  margin-top: 45px;
+}
+
+#family .family-wrapper .contentBox .btnBox .btn {
+  padding: 10px 50px;
+  background-color: transparent;
+  font-size: 18px;
+  border: 1px solid #1c74ef;
+  color: #1c74ef;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#family .family-wrapper .contentBox .btnBox .btn:hover {
+  background-color: #1c74ef;
+  color: #fff;
+}
+
 @media screen and (max-width: 1024px) {
   #intro .intro-wrapper .intro-content-box {
     text-align: center;
@@ -350,6 +390,9 @@ header nav .nav-item .btn:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 20px;
+  }
+  #family .family-wrapper .contentBox p br {
+    display: none;
   }
 }
 
@@ -366,6 +409,22 @@ header nav .nav-item .btn:hover {
   }
   #services .services-container .service-item {
     padding: 40px 10px;
+  }
+  #family .family-wrapper .contentBox {
+    text-align: center;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  #family .family-wrapper .imgBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

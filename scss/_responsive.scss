@@ -11,6 +11,17 @@
       }
     }
   }
+  #family {
+    .family-wrapper {
+      .contentBox {
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and(max-width: 768px) {
   header {
@@ -33,6 +44,18 @@
     .services-container {
       .service-item {
         padding: 40px 10px;
+      }
+    }
+  }
+  #family {
+    .family-wrapper {
+      .contentBox {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 20px;
+      }
+      .imgBox {
+        @include flexy-box();
       }
     }
   }
