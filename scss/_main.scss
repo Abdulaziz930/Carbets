@@ -275,3 +275,61 @@
     }
   }
 }
+
+#article {
+  .article-heading {
+    margin: 120px 0;
+    text-align: center;
+    h1 {
+      position: relative;
+      @include text(35px, 700, $heading-color);
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 3px;
+        left: 45%;
+        border-radius: 5px;
+        bottom: -30px;
+        background-color: $heading-color;
+      }
+    }
+  }
+  .my-card {
+    border-radius: 10px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    .imgBox {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      overflow: hidden;
+      img {
+        height: 240px;
+        transition: all 1s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .card-content {
+      padding: 35px;
+      h4 {
+        @include text(20px, 500, $heading-color);
+      }
+      p {
+        @include text(16px, 300, $text-color);
+        margin-top: 10px;
+      }
+      a {
+        position: relative;
+        @include text(17px, 600, $link-color);
+        display: inline-block;
+        margin-top: 25px;
+        &::after {
+          content: url("../assets/icons/Small-Vector.svg");
+          position: absolute;
+          right: -25px;
+        }
+      }
+    }
+  }
+}

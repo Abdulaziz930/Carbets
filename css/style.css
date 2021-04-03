@@ -549,6 +549,84 @@ header nav .nav-item .btn:hover {
   font-size: 10px;
 }
 
+#article .article-heading {
+  margin: 120px 0;
+  text-align: center;
+}
+
+#article .article-heading h1 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 700;
+  color: #000000;
+}
+
+#article .article-heading h1::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  left: 45%;
+  border-radius: 5px;
+  bottom: -30px;
+  background-color: #000000;
+}
+
+#article .my-card {
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+
+#article .my-card .imgBox {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+#article .my-card .imgBox img {
+  height: 240px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#article .my-card .imgBox img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#article .my-card .card-content {
+  padding: 35px;
+}
+
+#article .my-card .card-content h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
+#article .my-card .card-content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #7d7987;
+  margin-top: 10px;
+}
+
+#article .my-card .card-content a {
+  position: relative;
+  font-size: 17px;
+  font-weight: 600;
+  color: #4089ed;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+#article .my-card .card-content a::after {
+  content: url("../assets/icons/Small-Vector.svg");
+  position: absolute;
+  right: -25px;
+}
+
 @media screen and (max-width: 1024px) {
   #intro .intro-wrapper .intro-content-box {
     text-align: center;
@@ -642,5 +720,8 @@ header nav .nav-item .btn:hover {
   }
   #comments .comments-wrapper {
     padding: 50px 15px;
+  }
+  #article .my-card {
+    margin-top: 20px;
   }
 }
