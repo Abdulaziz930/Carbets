@@ -54,3 +54,67 @@
     }
   }
 }
+
+#services {
+  .services-heading {
+    margin-top: 120px;
+    text-align: center;
+    h1 {
+      position: relative;
+      @include text(35px, 700, $heading-color);
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 3px;
+        border-radius: 5px;
+        left: 45%;
+        bottom: -40px;
+        background-color: $heading-color;
+      }
+    }
+    p {
+      @include text(18px, 300, $text-color);
+      margin-top: 60px;
+    }
+  }
+  .services-container {
+    margin-top: 75px;
+    .service-item {
+      @include flexy-box();
+      flex-direction: column;
+      box-shadow: 10px 10px 40px rgba(229, 233, 246, 0.4);
+      padding: 40px 10px 60px;
+      border-radius: 10px;
+      .iconBox {
+        padding: 20px 22px;
+        border-radius: 10px;
+      }
+      .search-icon-box {
+        background-color: $primary-color;
+        margin-bottom: 10px;
+        box-shadow: 0px 25px 30px rgba(61, 139, 248, 0.15);
+      }
+      .code-icon-box {
+        background-color: $second-danger-color;
+        box-shadow: 0px 25px 30px rgba(98, 54, 255, 0.15);
+      }
+      .statistic-icon-box {
+        background-color: $thirth-danger-color;
+        margin-bottom: 5px;
+        box-shadow: 0px 25px 30px rgba(179, 54, 255, 0.15);
+      }
+      .contentBox {
+        text-align: center;
+        margin-top: 40px;
+        h4 {
+          @include text(20px, 700, $heading-color);
+        }
+        p {
+          @include text(16px, 400, $text-color);
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

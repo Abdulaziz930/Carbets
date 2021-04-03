@@ -29,6 +29,13 @@
       }
     }
   }
+  #services {
+    .services-container {
+      .service-item {
+        padding: 40px 10px;
+      }
+    }
+  }
 }
 
 @media screen and(max-width: 576px) {
@@ -63,6 +70,13 @@
     .partner-container {
       .partner-item {
         margin-bottom: 30px;
+      }
+    }
+  }
+  #services {
+    .services-container {
+      .service-item {
+        margin-top: 20px;
       }
     }
   }

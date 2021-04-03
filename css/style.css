@@ -241,6 +241,103 @@ header nav .nav-item .btn:hover {
   opacity: 1;
 }
 
+#services .services-heading {
+  margin-top: 120px;
+  text-align: center;
+}
+
+#services .services-heading h1 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 700;
+  color: #000000;
+}
+
+#services .services-heading h1::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  border-radius: 5px;
+  left: 45%;
+  bottom: -40px;
+  background-color: #000000;
+}
+
+#services .services-heading p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #7d7987;
+  margin-top: 60px;
+}
+
+#services .services-container {
+  margin-top: 75px;
+}
+
+#services .services-container .service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 10px 10px 40px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 10px 40px rgba(229, 233, 246, 0.4);
+  padding: 40px 10px 60px;
+  border-radius: 10px;
+}
+
+#services .services-container .service-item .iconBox {
+  padding: 20px 22px;
+  border-radius: 10px;
+}
+
+#services .services-container .service-item .search-icon-box {
+  background-color: #1c74ef;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 25px 30px rgba(61, 139, 248, 0.15);
+          box-shadow: 0px 25px 30px rgba(61, 139, 248, 0.15);
+}
+
+#services .services-container .service-item .code-icon-box {
+  background-color: #ff4454;
+  -webkit-box-shadow: 0px 25px 30px rgba(98, 54, 255, 0.15);
+          box-shadow: 0px 25px 30px rgba(98, 54, 255, 0.15);
+}
+
+#services .services-container .service-item .statistic-icon-box {
+  background-color: #b336ff;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0px 25px 30px rgba(179, 54, 255, 0.15);
+          box-shadow: 0px 25px 30px rgba(179, 54, 255, 0.15);
+}
+
+#services .services-container .service-item .contentBox {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#services .services-container .service-item .contentBox h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+#services .services-container .service-item .contentBox p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7d7987;
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 1024px) {
   #intro .intro-wrapper .intro-content-box {
     text-align: center;
@@ -267,6 +364,9 @@ header nav .nav-item .btn:hover {
     text-align: center;
     margin-top: 20px;
   }
+  #services .services-container .service-item {
+    padding: 40px 10px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -287,5 +387,8 @@ header nav .nav-item .btn:hover {
   }
   #partners .partner-container .partner-item {
     margin-bottom: 30px;
+  }
+  #services .services-container .service-item {
+    margin-top: 20px;
   }
 }
