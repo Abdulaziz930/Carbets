@@ -29,6 +29,15 @@
       }
     }
   }
+  #comments {
+    .comments-wrapper {
+      .commentBox {
+        .user-info {
+          display: block;
+        }
+      }
+    }
+  }
 }
 @media screen and(max-width: 768px) {
   header {
@@ -72,6 +81,19 @@
         img {
           padding-right: 10px;
         }
+      }
+    }
+  }
+  #comments {
+    .comments-wrapper {
+      .imgBox {
+        img {
+          margin: auto;
+        }
+      }
+      .commentBox {
+        text-align: center;
+        margin-top: 20px;
       }
     }
   }
@@ -126,6 +148,11 @@
           left: 47%;
         }
       }
+    }
+  }
+  #comments {
+    .comments-wrapper {
+      padding: 50px 15px;
     }
   }
 }

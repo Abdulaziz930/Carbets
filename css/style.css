@@ -440,6 +440,115 @@ header nav .nav-item .btn:hover {
   font-size: 10px;
 }
 
+#comments .comments-wrapper {
+  margin-top: 135px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+  padding: 75px 140px;
+}
+
+#comments .comments-wrapper .comments-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+#comments .comments-wrapper .comments-heading h1 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 700;
+  color: #000000;
+}
+
+#comments .comments-wrapper .comments-heading h1::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  left: 45%;
+  border-radius: 5px;
+  bottom: -30px;
+  background-color: #000000;
+}
+
+#comments .comments-wrapper .imgBox img {
+  border-radius: 10px;
+}
+
+#comments .comments-wrapper .commentBox {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#comments .comments-wrapper .commentBox .user-info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#comments .comments-wrapper .commentBox .user-info h5 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
+}
+
+#comments .comments-wrapper .commentBox .user-info span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4b4b4b;
+}
+
+#comments .comments-wrapper .commentBox .comment p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #4b4b4b;
+}
+
+#comments .slick-prev::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: 25px;
+  font-weight: 600;
+  color: #1c74ef;
+  position: absolute;
+  bottom: -230px;
+  left: 490px;
+  bottom: -333px;
+}
+
+#comments .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: 25px;
+  font-weight: 600;
+  color: #1c74ef;
+  position: absolute;
+  bottom: -230px;
+  right: 490px;
+  bottom: -333px;
+}
+
+#comments .slick-dots li button::before {
+  top: 25px;
+  color: #1c74ef;
+  font-size: 10px;
+}
+
 @media screen and (max-width: 1024px) {
   #intro .intro-wrapper .intro-content-box {
     text-align: center;
@@ -458,6 +567,9 @@ header nav .nav-item .btn:hover {
   }
   #projects .project-slider img {
     padding-left: 10px;
+  }
+  #comments .comments-wrapper .commentBox .user-info {
+    display: block;
   }
 }
 
@@ -494,6 +606,13 @@ header nav .nav-item .btn:hover {
   #projects .project-slider .slider-item img {
     padding-right: 10px;
   }
+  #comments .comments-wrapper .imgBox img {
+    margin: auto;
+  }
+  #comments .comments-wrapper .commentBox {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -520,5 +639,8 @@ header nav .nav-item .btn:hover {
   }
   #projects .section-heading h1::after {
     left: 47%;
+  }
+  #comments .comments-wrapper {
+    padding: 50px 15px;
   }
 }
