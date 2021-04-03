@@ -1,0 +1,43 @@
+footer {
+  margin-top: 120px;
+  background-color: $primary-color;
+  padding: 120px 145px 50px;
+
+  .descriptionBox {
+    margin-top: 25px;
+    p {
+      @include text(18px, 300, $secondary-color);
+    }
+  }
+  ul {
+    h5 {
+      @include text(20px, 700, $secondary-color);
+    }
+    li {
+      margin-top: 15px;
+      list-style-type: none;
+      a {
+        position: relative;
+        @include text(18px, 300, $secondary-color);
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: $secondary-color;
+          width: 0;
+          height: 2px;
+          border-radius: 5px;
+          bottom: -10%;
+          left: 0;
+          transition: all 0.5s;
+        }
+        &:hover {
+          text-decoration: none;
+          color: $secondary-color;
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

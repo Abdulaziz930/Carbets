@@ -97,6 +97,12 @@
       }
     }
   }
+  footer {
+    ul {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  }
 }
 
 @media screen and(max-width: 576px) {
@@ -158,6 +164,21 @@
   #article {
     .my-card {
       margin-top: 20px;
+    }
+  }
+  footer {
+    padding: 120px 15px 50px;
+    .footer-list {
+      text-align: center;
+    }
+    .descriptionBox {
+      p {
+        text-align: center;
+      }
+    }
+    .f-logo-box {
+      display: flex;
+      justify-content: center;
     }
   }
 }

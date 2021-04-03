@@ -332,4 +332,14 @@
       }
     }
   }
+  .btnBox {
+    text-align: center;
+    margin-top: 40px;
+    .btn {
+      @include btn(10px 50px, transparent, 18px, $primary-color);
+      &:hover {
+        @include btnHover(transparent);
+      }
+    }
+  }
 }
