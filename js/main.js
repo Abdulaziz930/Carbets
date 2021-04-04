@@ -6,8 +6,10 @@ let logo = document.querySelector(".logoImg");
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > "400") {
     backToTop.style.opacity = "1";
+    backToTop.style.transform = "translateY(-30px)";
   } else {
     backToTop.style.opacity = "0";
+    backToTop.style.transform = "translateY(30px)";
   }
   header.classList.toggle("sticky", window.scrollY > 15);
 
