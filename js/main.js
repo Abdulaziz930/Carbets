@@ -1,5 +1,26 @@
 let hamburgerMenu = document.querySelector(".navbar-toggler");
 let backToTop = document.querySelector(".backToTop");
+let header = document.querySelector("header");
+let logo = document.querySelector(".logoImg");
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > "400") {
+    backToTop.style.opacity = "1";
+  } else {
+    backToTop.style.opacity = "0";
+  }
+  header.classList.toggle("sticky", window.scrollY > 15);
+
+  if (window.pageYOffset > "15") {
+    logo.setAttribute("src", "./assets/icons/footer-logo.svg");
+  } else {
+    logo.setAttribute("src", "./assets/icons/logo.svg");
+  }
+});
+
+backToTop.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});
 
 let menuOpen = false;
 

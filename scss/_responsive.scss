@@ -1,4 +1,7 @@
 @media screen and(max-width: 1024px) {
+  .sticky {
+    padding: 5px 74px;
+  }
   #intro {
     .intro-wrapper {
       .intro-content-box {
@@ -53,6 +56,7 @@
       .navbar-collapse {
         text-align: center;
         margin-top: 20px;
+        padding-bottom: 25px;
       }
     }
   }
@@ -106,6 +110,9 @@
 }
 
 @media screen and(max-width: 576px) {
+  .sticky {
+    padding: 5px;
+  }
   header {
     nav {
       .navbar-toggler {

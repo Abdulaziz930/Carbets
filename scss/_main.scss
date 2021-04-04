@@ -31,6 +31,25 @@
       }
     }
   }
+  .backToTop {
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    border: 2px solid $primary-color;
+    border-radius: 50%;
+    padding: 25px 35px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    transition: all 0.5s;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+    &:hover {
+      background-color: $primary-color;
+      color: $secondary-color;
+    }
+  }
 }
 
 #partners {
@@ -152,14 +171,7 @@
       position: relative;
       @include text(35px, 700, $heading-color);
       &::after {
-        content: "";
-        position: absolute;
-        width: 10%;
-        height: 3px;
-        left: 45%;
-        border-radius: 5px;
-        bottom: -30px;
-        background-color: $heading-color;
+        @include headingUnderLine();
       }
     }
   }
@@ -211,14 +223,7 @@
         position: relative;
         @include text(35px, 700, $heading-color);
         &::after {
-          content: "";
-          position: absolute;
-          width: 10%;
-          height: 3px;
-          left: 45%;
-          border-radius: 5px;
-          bottom: -30px;
-          background-color: $heading-color;
+          @include headingUnderLine();
         }
       }
     }
@@ -284,14 +289,7 @@
       position: relative;
       @include text(35px, 700, $heading-color);
       &::after {
-        content: "";
-        position: absolute;
-        width: 10%;
-        height: 3px;
-        left: 45%;
-        border-radius: 5px;
-        bottom: -30px;
-        background-color: $heading-color;
+        @include headingUnderLine();
       }
     }
   }

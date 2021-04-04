@@ -1,5 +1,10 @@
 header {
   margin-top: 30px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
+  transition: all 0.5s;
   .navbar {
     padding: 0;
   }
@@ -48,6 +53,33 @@ header {
         &:hover {
           @include btnHover($danger-color);
         }
+      }
+    }
+  }
+}
+.sticky {
+  padding: 5px 100px;
+  background-color: $link-color;
+  nav {
+    .navbar-toggler {
+      .hamburger-menu-icon {
+        background-color: $secondary-color;
+        &::before {
+          background-color: $secondary-color;
+        }
+        &::after {
+          background-color: $secondary-color;
+        }
+      }
+    }
+    .open {
+      .hamburger-menu-icon {
+        background-color: transparent;
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $secondary-color;
       }
     }
   }

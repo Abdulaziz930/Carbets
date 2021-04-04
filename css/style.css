@@ -26,6 +26,13 @@ body {
 
 header {
   margin-top: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 header .navbar {
@@ -125,6 +132,31 @@ header nav .nav-item .btn:hover {
   color: #f04037;
 }
 
+.sticky {
+  padding: 5px 100px;
+  background-color: #4089ed;
+}
+
+.sticky nav .navbar-toggler .hamburger-menu-icon {
+  background-color: #fff;
+}
+
+.sticky nav .navbar-toggler .hamburger-menu-icon::before {
+  background-color: #fff;
+}
+
+.sticky nav .navbar-toggler .hamburger-menu-icon::after {
+  background-color: #fff;
+}
+
+.sticky nav .open .hamburger-menu-icon {
+  background-color: transparent;
+}
+
+.sticky nav .nav-item .nav-link {
+  color: #fff;
+}
+
 #intro .intro-wrapper {
   background-color: #f5f8fa;
   margin-top: 50px;
@@ -180,6 +212,28 @@ header nav .nav-item .btn:hover {
 #intro .intro-wrapper .intro-content-box .btnBox .btn:hover {
   background-color: transparent;
   color: #1c74ef;
+}
+
+#intro .backToTop {
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  border: 2px solid #1c74ef;
+  border-radius: 50%;
+  padding: 25px 35px;
+  background-color: #fff;
+  color: #1c74ef;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 3;
+}
+
+#intro .backToTop:hover {
+  background-color: #1c74ef;
+  color: #fff;
 }
 
 #partners .partner-container {
@@ -721,6 +775,9 @@ footer ul li a:hover::before {
 }
 
 @media screen and (max-width: 1024px) {
+  .sticky {
+    padding: 5px 74px;
+  }
   #intro .intro-wrapper .intro-content-box {
     text-align: center;
   }
@@ -754,6 +811,7 @@ footer ul li a:hover::before {
   header nav .navbar-collapse {
     text-align: center;
     margin-top: 20px;
+    padding-bottom: 25px;
   }
   #services .services-container .service-item {
     padding: 40px 10px;
@@ -791,6 +849,9 @@ footer ul li a:hover::before {
 }
 
 @media screen and (max-width: 576px) {
+  .sticky {
+    padding: 5px;
+  }
   header nav .navbar-toggler .hamburger-menu-icon {
     width: 8%;
   }
