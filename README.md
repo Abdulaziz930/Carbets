@@ -1,4 +1,4 @@
-# <img src="./assets/images/main-logo.svg" /> Carbets
+# <img src="./assets/icons/main-logo.svg" /> Carbets
 
 ## WebSite's Link : https://abdulaziz930.github.io/Carbets/
 
