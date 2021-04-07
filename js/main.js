@@ -2,6 +2,8 @@ let hamburgerMenu = document.querySelector(".navbar-toggler");
 let backToTop = document.querySelector(".backToTop");
 let header = document.querySelector("header");
 let logo = document.querySelector(".logoImg");
+let sections = document.querySelectorAll("section");
+let navLinks = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > "400") {
@@ -18,6 +20,19 @@ window.addEventListener("scroll", function () {
   } else {
     logo.setAttribute("src", "./assets/icons/logo.svg");
   }
+
+  let scrollPostion = document.documentElement.scrollTop;
+
+  sections.forEach((section) => {
+    if (
+      scrollPostion >= section.offsetTop - section.offsetHeight * 0.25 &&
+      scrollPostion < section.offsetTop + section.offsetHeight * 0.25
+    ) {
+      let currentId = section.getAttribute("id");
+      removeActiveClasses();
+      addActiveClass(currentId);
+    }
+  });
 });
 
 backToTop.addEventListener("click", function () {
@@ -35,6 +50,21 @@ hamburgerMenu.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
+function removeActiveClasses() {
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+  });
+}
+
+function addActiveClass(id) {
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === `#${id}`) {
+      link.setAttribute("href", `#${id}`);
+      link.classList.add("active");
+    }
+  });
+}
 
 $(document).ready(function () {
   $(".project-slider").slick({

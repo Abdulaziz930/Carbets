@@ -87,3 +87,16 @@
   bottom: -30px;
   background-color: $heading-color;
 }
+
+@mixin navLinkAfter($color) {
+  content: "";
+  position: absolute;
+  border: 1px solid $color;
+  border-radius: 5px;
+  background-color: $color;
+  left: 50%;
+  width: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.5s, opacity 1s;
+}

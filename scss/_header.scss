@@ -42,11 +42,23 @@ header {
     .nav-item {
       padding-left: 20px;
       .nav-link {
+        position: relative;
         @include text(16px, 400, $text-color);
         transition: all 0.5s;
+        &::after {
+          @include navLinkAfter($primary-color);
+        }
         &:hover {
           color: $second-text-color;
+          &::after {
+            width: 100%;
+            left: 0;
+            opacity: 1;
+          }
         }
+      }
+      .active {
+        @include text(17px, 600, $second-text-color);
       }
       .btn {
         @include btn(7px 20px, $danger-color, 16px, $danger-color);
@@ -80,6 +92,12 @@ header {
     .nav-item {
       .nav-link {
         color: $secondary-color;
+        &::after {
+          @include navLinkAfter($secondary-color);
+        }
+      }
+      .active {
+        @include text(17px, 600, $second-text-color);
       }
     }
   }
